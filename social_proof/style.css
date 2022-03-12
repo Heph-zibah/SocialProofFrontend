@@ -1,0 +1,251 @@
+/* RESET */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --card-color: hsl(300, 43%, 22%);
+    --ratings-color: hsl(300, 24%, 96%);
+    --buyer-color: hsl(333, 80%, 67%);
+    --text-color: hsl(0, 0%, 100%);
+}
+
+
+/* UTILITIES */
+
+body {
+    font-family: 'Spartan', sans-serif;
+    background: url(img/bg-pattern-top-desktop.svg) no-repeat;
+    line-height: 1.2;
+    font-size: 15px;
+    width: 100%;
+}
+
+@media (max-width:1440px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0 10%;
+    }
+    .intro {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-content: center;
+    }
+    .left-content {
+        width: 100%;
+        text-align: start;
+    }
+    .left-content h1 {
+        font-size: 3.5rem;
+        font-weight: 700;
+        line-height: 1;
+        padding-right: 1rem;
+        color: var(--card-color);
+    }
+    .left-content p {
+        margin-top: 1rem;
+        color: hsl(303, 10%, 53%);
+    }
+    .ratings {
+        width: 70%;
+        margin-left: 4rem;
+    }
+    .rating {
+        display: flex;
+        background: var(--ratings-color);
+        padding: 1rem .2rem;
+        border-radius: .5rem;
+        position: relative;
+    }
+    .rating p {
+        color: var(--card-color);
+        font-weight: 700;
+    }
+    .rating1 {
+        margin-bottom: 1rem;
+    }
+    .rating2 {
+        margin-bottom: 1rem;
+        left: 50px;
+    }
+    .rating3 {
+        margin-bottom: 1rem;
+        left: 100px;
+    }
+    .images {
+        display: inline-block;
+        margin-left: 15px;
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .card {
+        background: var(--card-color);
+        padding: 1rem 2rem 3rem 2rem;
+        border-radius: .5rem;
+    }
+    .card2 {
+        margin-left: 1rem;
+        position: relative;
+        top: 20px;
+    }
+    .card3 {
+        margin-left: 1rem;
+        position: relative;
+        top: 40px;
+    }
+    .heading {
+        display: flex;
+    }
+    .heading img {
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        margin-top: 1.8rem;
+    }
+    .name {
+        margin: 2rem;
+    }
+    .name p {
+        color: var(--text-color);
+        font-size: .5rem;
+        font-weight: 500;
+    }
+    .name small {
+        color: var(--buyer-color);
+    }
+    .card p {
+        color: var(--text-color);
+        font-size: 5px;
+        font-weight: 300;
+    }
+    footer {
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width:375px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        margin: 3rem 2rem;
+    }
+    .intro {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 4rem 0 2rem 0;
+    }
+    .left-content {
+        width: 100%;
+        text-align: center;
+    }
+    .left-content h1 {
+        font-size: 1.75rem;
+        font-weight: 700;
+        line-height: 1;
+        padding-right: .5rem;
+        color: var(--card-color);
+    }
+    .left-content p {
+        margin-top: .5rem;
+        color: hsl(303, 10%, 53%);
+    }
+    .ratings {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+    .rating {
+        display: flex;
+        flex-direction: column;
+        background: var(--ratings-color);
+        padding: .5rem .1rem;
+        border-radius: .25rem;
+        text-align: center;
+        position: relative;
+    }
+    .rating p {
+        color: var(--card-color);
+        margin-top: .5rem;
+        font-weight: 700;
+    }
+    .rating1 {
+        margin-bottom: 1rem;
+    }
+    .rating2 {
+        margin-bottom: 1rem;
+        left: 0;
+    }
+    .rating3 {
+        margin-bottom: 1rem;
+        left: 0;
+    }
+    .images {
+        display: inline-block;
+        margin-left: 15px;
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+    .card {
+        background: var(--card-color);
+        padding: 1rem 2rem 2rem 2rem;
+        border-radius: .5rem;
+    }
+    .card2 {
+        margin-top: 1rem;
+        position: relative;
+        top: 0;
+        margin-left: 0;
+    }
+    .card3 {
+        margin-top: 1rem;
+        position: relative;
+        top: 0;
+        margin-left: 0;
+    }
+    .heading {
+        display: flex;
+    }
+    .heading img {
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        margin-top: 1.8rem;
+    }
+    .name {
+        margin: 2rem;
+    }
+    .name p {
+        color: var(--text-color);
+        font-size: .9rem;
+    }
+    .name small {
+        color: var(--buyer-color);
+    }
+    .card p {
+        color: var(--text-color);
+        font-size: 5px;
+        font-weight: 300;
+    }
+    footer {
+        margin-top: 1rem;
+    }
+}
